@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #3A5BA0; /* Primary Blue */
+    background-color: #456dc4; /* Primary Blue */
     padding: 10px 20px;
     color: #555555; /* Dark Gray for text */
 }
@@ -50,7 +50,7 @@ nav ul {
 }
 
 nav a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -85,5 +85,6 @@ footer {
 
 /* New Style for logo2 */
 .header2 {
+    background-color: #ffffff; /* Primary Blue */
     border: 0.1px solid rgb(127, 128, 128); /* Adjust thickness and color as needed */
 }
