@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBuilds Solutions</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <style>
+        body {
+            min-height: 1000vh; /* Ensure the body is at least twice the viewport height */
+        }
+    </style>
+</head><center>
 <body>
+    
     <header>
         <div class="logo">
-            <img src="path/to/logo.png" alt="DevBuilds">
+            <img src="/images/devlogo.png" alt="DevBuilds">
             <span> DevBuilds Solutions</span>
         </div>
         <div class="search-bar">
-            <label for="category-select">Select Category</label>
+            <!-- <label for="category-select">Select Category</label> -->
             <input type="text" placeholder="Search for products">
             <select id="category-select">
                 <option value="">SELECT CATEGORY</option>
@@ -32,15 +38,11 @@
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
-        <div class="user-options">
-            <a href="#login">LOGIN / REGISTER</a>
-            <span>0</span> <!-- Example for notifications -->
-            <span>0</span> <!-- Example for cart items -->
-        </div>
+      
     </header>
     <header class="header2">
         <div class="logo2">
-            <img src="path/to/logo.png" alt="DevBuilds">
+            <img src="/images/devlogo.png" alt="DevBuilds">
             <span>DevBuilds</span>
         </div>
         <center>
@@ -54,9 +56,46 @@
         </nav>
         </center> 
     </header>
+</center>
     <main>
-        <section id="projects" class="projects">
-            <h2>Our Projects suyog</h2>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="/Images/banner3.png" style="width:100%">
+              <div class="text">Caption Text</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="/Images/banner2.png" style="width:100%">
+              <div class="text">Caption Two</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="/Images/banner1.png" style="width:100%">
+              <div class="text">Caption Three</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              
+            
+            
+          <br>
+          
+         
+          <script src="script.js"></script>
+       <center> <section id="projects" class="projects">
+            <h2>Our Projects </h2>
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Diagnosing Breast Cancer</h3>
@@ -67,6 +106,7 @@
                 <!-- Other project cards can be added here -->
             </div>
         </section>
+    </center>
         <section id="about">
             <h2>About Us</h2>
             <p>Information about the company.</p>
@@ -83,7 +123,7 @@
     <footer>
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="path/to/logo.png" alt="Global Techno Solutions">
+                <img src="path/to/logo.png" alt="DevBuilds">
                 <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
                 <p>Phone: (+91) 9309154732</p>
                 <p>Email: sales@finalyearprojects.in</p>
