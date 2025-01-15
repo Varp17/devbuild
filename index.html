@@ -3,59 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBuilds - Home</title>
+    <title>DevBuilds Solutions</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">DevBuilds</div>
+        <div class="logo">
+            <img src="path/to/logo.png" alt="DevBuilds">
+            <span> DevBuilds Solutions</span>
+        </div>
+        <div class="search-bar">
+            <label for="category-select">Select Category</label>
+            <input type="text" placeholder="Search for products">
+            <select id="category-select">
+                <option value="">SELECT CATEGORY</option>
+                <!-- Add categories here -->
+            </select>
+            <button type="submit">Search</button>
+        </div>
+        
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#journal-paper">JOURNAL PAPER</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
-    </header>
-
-    <!-- Scrollable Banner -->
-    <div class="banner">
-        <div class="banner-content">
-            <h1>Welcome to DevBuilds</h1>
-            <p>Your one-stop solution for student projects and software needs!</p>
-            <a href="about.html" class="btn">Learn More</a>
+        <div class="user-options">
+            <a href="#login">LOGIN / REGISTER</a>
+            <span>0</span> <!-- Example for notifications -->
+            <span>0</span> <!-- Example for cart items -->
         </div>
-    </div>
-
-    <!-- Projects Section -->
+    </header>
+    <header class="header2">
+        <div class="logo2">
+            <img src="path/to/logo.png" alt="DevBuilds">
+            <span>DevBuilds</span>
+        </div>
+        <center>
+        <nav>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        </center> 
+    </header>
     <main>
-        <section class="projects">
+        <section id="projects" class="projects">
             <h2>Our Projects</h2>
             <div class="project-grid">
-                <!-- Example Project Blocks -->
                 <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
+                    <h3>Diagnosing Breast Cancer</h3>
+                    <p>To develop a robust and accurate auxiliary diagnostic system for breast cancer by integrating machine learning techniques with a hybrid strategy.</p>
+                    <p>Price: ₹5,500.00</p>
+                    <img src="path/to/flowchart.png" alt="Project Flowchart" />
                 </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Description of project 3.</p>
-                </div>
-                <!-- Add up to 12 project cards -->
-                <!-- You can duplicate the above block for additional projects -->
+                <!-- Other project cards can be added here -->
             </div>
         </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Information about the company.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Details about the services offered.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Contact information and form.</p>
+        </section>
     </main>
-
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 DevBuilds. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="path/to/logo.png" alt="Global Techno Solutions">
+                <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
+                <p>Phone: (+91) 90254 34960</p>
+                <p>Email: sales@finalyearprojects.in</p>
+            </div>
+            <div class="footer-links">
+                <h4>OUR CATEGORY</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Embedded</li>
+                    <li>Matlab</li>
+                    <li>VLSI</li>
+                    <li>Mechanical</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>USEFUL LINKS</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact Us</li>
+                    <li>Latest News</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>MINI PROJECTS</h4>
+                <ul>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>Embedded</li>
+                    <li>Matlab</li>
+                    <li>VLSI</li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; Finalyearprojects.in 2024</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
