@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBuilds Solutions</title>
+    <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -12,22 +13,74 @@
     </style>
 </head><center>
 <body>
-    
-    <header>
-        <div class="logo">
-            <img src="/images/devlogo.png" alt="DevBuilds">
-            <span> DevBuilds Solutions</span>
+    <header class="header">
+        <span >Welcome To DevBuilds</span> 
+        <nav>
+            <ul>
+                <li><a href="#Newsletter">Newsletter</a></li>
+                <li><a href="#Contact Us">+91 9309154732</a></li>
+                <li><a href="#FAQ">FAQ's</a></li>
+                <li><a href="#Contact Us">Contact Us</a></li>
+                <li><a href="#Contact Us">            </a></li
+              
+            </ul>
+        </nav>
+        
+    </header>
+    <header class="header1">
+        <div class="logo" style="height: 20px; display: flex; align-items: center; margin-right: auto;">
+            <img src="/images/devlogo.png" alt="DevBuilds Logo" style="height: 100%; margin-right: 8px;">
+            <span class="devbuild">DevBuilds Solutions</span>
+        <span class="solutions-unlimited">Solutions Unlimited</span>
         </div>
-        <div class="search-bar">
-            <!-- <label for="category-select">Select Category</label> -->
-            <input type="text" placeholder="Search for products">
+        
+        <div class="search-bar" style="margin: 0 auto; display: flex;">
+            <input type="text" placeholder="Search for products" />
             <select id="category-select">
                 <option value="">SELECT CATEGORY</option>
-                <!-- Add categories here -->
+                <option value="java">Artificial Intelligence</option>
+                <option value="android">Android</option>
+                <option value="Blockchain">Blockchain</option>
+                <option value="CyberSecurity">CyberSecurity</option>
+                <option value="Data Mining">Data Mining</option>
+                <option value="DeepLearning">DeepLearning</option>
+                <option value="python">BioTech</option>
+                <option value="IOT">IOT</option>
             </select>
             <button type="submit">Search</button>
         </div>
         
+        <nav >
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#shop">SHOP</a></li>
+                <li><a href="#journal-paper">JOURNAL PAPER</a></li>
+                <li><a href="#blog">BLOG</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <header class="header2">
+        <div class="logo" style="height: 20px; display: flex; align-items: center;">
+            <img src="/images/devlogo.png" alt="DevBuilds Logo" style="height: 100%; margin-right: 8px;">
+            <span>DevBuilds Solutions</span>
+        </div>
+        
+        <!-- Browse Categories Dropdown -->
+        <div class="category-select">
+           
+            <select id="category-select">
+                <option value="">Browse Categories</option>
+                <option value="java">Java</option>
+                <option value="android">Android</option>
+                <option value="iot">IoT</option>
+                <option value="python">Python</option>
+            </select>
+        </div>
+        
+        <!-- Navigation Bar -->
         <nav>
             <ul>
                 <li><a href="#home">HOME</a></li>
@@ -38,42 +91,26 @@
                 <li><a href="#contact">CONTACT US</a></li>
             </ul>
         </nav>
-      
     </header>
-    <header class="header2">
-        <div class="logo2">
-            <img src="/images/devlogo.png" alt="DevBuilds">
-            <span>DevBuilds</span>
-        </div>
-        <center>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        </center> 
-    </header>
+    
 </center>
     <main>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-              <div class="numbertext">1 / 3</div>
+              <div class="numbertext"></div>
               <img src="/Images/banner3.png" style="width:100%">
               <div class="text">Caption Text</div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">2 / 3</div>
+              <div class="numbertext"></div>
               <img src="/Images/banner2.png" style="width:100%">
               <div class="text">Caption Two</div>
             </div>
             
             <div class="mySlides fade">
-              <div class="numbertext">3 / 3</div>
+              <div class="numbertext"></div>
               <img src="/Images/banner1.png" style="width:100%">
               <div class="text">Caption Three</div>
             </div>
@@ -117,7 +154,7 @@
                         <div class="name">
                             EMBEDDED
                         </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/embeded.jpg" alt="Smiley" width="auto" height="auto">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/IOT.png" alt="Smiley" width="auto" height="auto">
                     </div>
                     <div class="category" style="flex: 1 1 35%;">
                         <div class="products">
@@ -126,7 +163,7 @@
                         <div class="name">
                             ANDROID
                         </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/download.png" alt="Smiley" width="auto" height="auto">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/Android.png" alt="Smiley" width="auto" height="auto">
                     </div>
                     <div class="category" style="flex: 1 1 35%;">
                         <div class="products">
@@ -135,24 +172,55 @@
                         <div class="name">
                             JAVA
                         </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/download (1).png" alt="Smiley" width="auto" height="auto">
+                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/Java.png" alt="Smiley" width="auto" height="auto">
                     </div>
                 </div>
             </center> 
             
             </div>
         </section>
-        <center> <section id="projects" class="projects">
-             <h2>Our Projects </h2>
-             <div class="project-grid">
-               <center>  <div class="project-card">
-                    <center> <h3>Diagnosing Breast Cancer</h3></center>
-                    <center> <p>To develop a robust and accurate auxiliary diagnostic system for breast cancer by integrating machine learning techniques with a hyb  czswscs rid strategy.</p></center>
-                     <p>Price: ₹5,500.00</p>
-                     <img src="path/to/flowchart.png" alt="Project Flowchart" /> 
-                 </div>
-                 <!-- Other project cards can be added here -->
-             </div>
+        <center> <section id="featured-products">
+            <h2>Featured Products</h2>
+            <p>Visit our shop to see amazing creations from our Projects.</p>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="path/to/image1.png" alt="Product Image" />
+                    <h3>A Deep Learning-Based Efficient Firearms Monitoring Technique for Building Secure Smart Cities</h3>
+                    <p>Python, Deep Learning, Projects, Deep Learning</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                    <p>Price: ₹5,500.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image2.png" alt="Product Image" />
+                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
+                    <p>Python, Deep Learning, Projects, Deep Learning</p>
+                    <p>Price: ₹5,500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image2.png" alt="Product Image" />
+                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
+                    <p>Python, Deep Learning, Projects, Deep Learning</p>
+                    <p>Price: ₹5,500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image2.png" alt="Product Image" />
+                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
+                    <p>Python, Deep Learning, Projects, Deep Learning</p>
+                    <p>Price: ₹5,500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image2.png" alt="Product Image" />
+                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
+                    <p>Python, Deep Learning, Projects, Deep Learning</p>
+                    <p>Price: ₹5,500.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <!-- Add more product cards as needed -->
+            </div>
+        </section>
             
     </center>
     <center><section id="about">
@@ -168,32 +236,32 @@
             <p>Contact information and form.</p>
         </section></center>
     </main>
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="path/to/logo.png" alt="DevBuilds">
-                <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
-                <p>Phone: (+91) 9309154732</p>
-                <p>Email: sales@finalyearprojects.in</p>
-            </div>
-            <div class="footer-links">
-                <h4>OUR CATEGORY</h4>
-                <ul>
-                    <li>Java</li>
-                    <li>Python</li>
-                    <li>Embedded</li>
-                    <li>Matlab</li>
-                    <li>VLSI</li>
-                    <li>Mechanical</li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h4>USEFUL LINKS</h4>
-                <ul>
-                    <li>Privacy Policy</li>
-                    <li>Returns</li>
-                    <li>Terms & Conditions</li>
-                    <li>Contact Us</li>
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/Images/devlogo.png" alt="DevBuilds">
+            <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
+            <p>Phone: (+91) 90254 34960</p>
+            <p>Email: sales@finalyearprojects.in</p>
+        </div>
+        <div class="footer-links">
+            <h4>OUR CATEGORY</h4>
+            <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Embedded</li>
+                <li>Matlab</li>
+                <li>VLSI</li>
+                <li>Mechanical</li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>USEFUL LINKS</h4>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Returns</li>
+                <li>Terms & Conditions</li>
+                <li>Contact Us</li>
                     <li>Latest News</li>
                     <li>FAQ</li>
                 </ul>
@@ -209,8 +277,8 @@
                 </ul>
             </div>
         </div>
-        <p>&copy; Finalyearprojects.in 2024</p>
-    </footer>
+        <p>&copy; Devbuilds.in 2024</p>
+    </footer> 
     <script src="script.js"></script>
 </body>
 </html>
