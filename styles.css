@@ -235,7 +235,7 @@ span {
 }
 
 .category img {
-  width: 100px;
+  width: auto;
   height: auto;
   margin-top: 10px;
 }
