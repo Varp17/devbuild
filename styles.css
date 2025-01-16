@@ -5,103 +5,97 @@ body {
   padding: 0;
   overflow: auto; /* Changed to allow scrolling */
   min-height: 2000vh; /* Ensure the body is at least twice the viewport height */
-  
+  background-color: #ebebeb;
 }
-.slideshow-container {
-width: 1200px;        /* Set the width to 1200px */
-height: 400px;        /* Set the height to 400px */
-margin: 0 auto;       /* Center the container horizontally */
-position: relative;   /* To position slides inside the container */
-overflow: hidden;     /* Hide the overflow to maintain clean edges */
+..slideshow-container {
+  width: 40%; /* Set a flexible width */
+  aspect-ratio: 3 / 1; /* Maintain a ratio for slides */
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; /* Hide overflowing parts of slides */
 }
 
-/* Optional: Styling for slideshow images */
-
-
-
-div{
-padding: 1%;
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images scale without distortion */
 }
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Subtle button background */
   color: white;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-.container{
-  align-items: center;
+  border-radius: 50%; /* Circular buttons */
+  z-index: 10; /* Place above slides */
+  transform: translateY(-50%);
 }
 
-/* Position the "next button" to the right */
+.prev {
+  left: 10px;
+}
+
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  right: 10px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
-.text {
-color: #f2f2f2;
-font-size: 15px;
-padding: 8px 12px;
-position: absolute;
-bottom: 8px;
-width: 100%;
-text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-color: #f2f2f2;
-font-size: 12px;
-padding: 8px 12px;
-position: absolute;
-top: 0;
-}
-
-/* The dots/bullets/indicators */
 .dot {
-height: 15px;
-width: 15px;
-margin: 0 2px;
-background-color: #bbb;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #999;
 }
 
 .active {
-background-color: #717171;
+  background-color: #717171;
 }
 
-/* Fading animation */
 .fade {
-animation-name: fade;
-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
 }
 
 @keyframes fade {
-from {opacity: .4} 
-to {opacity: 1}
+  from { opacity: 0.4; }
+  to { opacity: 1; }
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-.text {font-size: 11px}
+@media only screen and (max-width: 768px) {
+  .slideshow-container {
+    width: 60%; /* Adjust for smaller screens */
+  }
+
+  .text {
+    font-size: 12px; /* Adjust text size */
+  }
+
+  .prev, .next {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
 }
+
 
 
 
@@ -122,7 +116,7 @@ align-items: left;
 }
 .header a{
 border-left: #bbbaba 1px solid;
-color: #ffffff;
+color: #cfe3f2;
 }
 
 .header a:hover {
@@ -409,11 +403,12 @@ background-color: #45a049; /* Darker green on hover */
 }
 }
 
-.footer-content {
+ .footer-content { 
 display: flex;
 justify-content: space-between;
 padding: 20px;
-background-color: #f1f1f1;
+background-color: #fffbfb;
+color: black;
 }
 
 .footer-logo {
@@ -426,6 +421,7 @@ flex: 1;
 
 .footer-links h4 {
 margin-bottom: 10px;
+
 }
 
 .footer-links ul {
@@ -448,12 +444,67 @@ color: #2fa9d5;
 footer {
 text-align: center;
 padding: 10px 0;
-background-color: #ddd;
+background-color: #0073e6;
+}  
+  
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #0073e6;
+  color: #fff;
 }
-/* New Style for logo2 */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.footer-logo {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer-card {
+  flex: 1;
+  background-color: #9f9f9f; /* Gray background for cards */
+  padding: 15px;
+  border-radius: 8px; /* Rounded corners */
+  margin: 0 10px; /* Space between cards */
+}
+
+.footer-card h4 {
+  margin-bottom: 10px;
+}
+
+.footer-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-card ul li {
+  margin: 5px 0;
+  padding-top: 10px;
+}
+
+.footer-card ul li:hover {
+  color: #2fa9d5;
+}
+
 
 span {
 align-items: center;
+}
+.devbuild {
+  font-size: 16px;
+  font-weight: bold;
+}
+.solutions-unlimited {
+  font-size: 12px;
+  font-style: italic;
+  font-weight: bold;
+  vertical-align: super;
 }
 .container {
 width: 80%;
