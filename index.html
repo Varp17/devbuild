@@ -17,19 +17,29 @@
 </head>
 <body class="bg-gray-100">
 
-    <header class="bg-blue-500 shadow-md p-4 flex justify-between items-center">
-        <span>Welcome To DevBuilds</span>
-        <nav>
-            <ul class="flex space-x-6">
-                <li><a href="#Newsletter">Newsletter</a></li>
-                <li><a href="#Contact Us">+91 9309154732</a></li>
-                <li><a href="#FAQ">FAQ's</a></li>
-                <li><a href="#Contact Us">Contact Us</a></li>
-            </ul>
+    <header class="bg-blue-500 shadow-md p-0 flex justify-between items-center">
+        <div class="flex-1 pl-2"> <!-- Added padding-left (pl-2) to adjust spacing from the left -->
+          <div class="p-2 flex items-center space-x-4">
+            <!-- Mobile Menu Icon -->
+            <span id="menuIcon" class="material-symbols-outlined text-2xl cursor-pointer font-normal">
+              menu
+            </span>
+            <h1 class="text-2xl font-bold">WELLCOME TO DEVBUILDS</h1>
+          </div>
+        </div>
+      
+        <nav class="mr-2"> <!-- Added margin-right (mr-2) to push content 10px away from the right edge -->
+          <ul class="flex space-x-6">
+            <li><a href="#Newsletter">Newsletter</a></li>
+            <li><a href="#Contact Us">+91 9309154732</a></li>
+            <li><a href="#FAQ">FAQ's</a></li>
+            <li><a href="#Contact Us">Contact Us</a></li>
+          </ul>
         </nav>
-    </header>
+      </header>
+      
 
-    <header class="bg-blue-100 mx-auto p-4 flex flex-col md:flex-row justify-between  md:space-x-2">
+    <header class="bg-blue-100 mx-auto p-4 flex flex-col md:flex-row justify-between md:space-x-2">
         <!-- Logo and Title Section -->
         <div class="flex items-center mb-6 md:mb-0">
             <img src="/images/devlogo.png" alt="DevBuilds Logo" class="h-16 mr-4">
@@ -37,6 +47,7 @@
                 <span class="text-2xl font-bold text-black">DevBuilds Solutions</span>
                 <div class="text-sm text-gray-700">Solutions Unlimited</div>
             </div>
+          
         </div>
     
         <!-- Search Bar Section -->
@@ -101,53 +112,102 @@
             
         </div>
     
-        <!-- Mobile Menu Icon -->
-        <span class="material-symbols-outlined text-2xl cursor-pointer mt-4 md:mt-0">menu</span>
+        
+         <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+      <div class="p-4">
+        <h2 class="text-xl font-bold">My Sidebar</h2>
+        <ul class="mt-4">
+          <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Dashboard</li>
+          <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Profile</li>
+          <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Settings</li>
+          <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Logout</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Content -->
+    
+  </div>
+
+  <!-- Script to Toggle Sidebar and Close on Click Outside -->
+  <script>
+    const menuIcon = document.getElementById('menuIcon');
+    const sidebar = document.getElementById('sidebar');
+    const body = document.body;
+
+    // Toggle sidebar visibility
+    menuIcon.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent click from bubbling to body
+      sidebar.classList.toggle('-translate-x-full');
+    });
+
+    // Close sidebar when clicking outside of it
+    body.addEventListener('click', () => {
+      if (!sidebar.classList.contains('-translate-x-full')) {
+        sidebar.classList.add('-translate-x-full');
+      }
+    });
+
+    // Prevent sidebar from closing when clicking inside it
+    sidebar.addEventListener('click', (e) => {
+      e.stopPropagation(); // Stop click from propagating to the body
+    });
+  </script>
     </header>
    
    
-<div class="carousel relative rounded relative overflow-hidden shadow-xl ">
+   <div class="carousel relative rounded relative overflow-hidden shadow-xl">
     <div class="carousel-inner relative overflow-hidden w-full">
-      <!--Slide 1-->
-      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner1.png?raw=true')"></div>
-  
-      <label for="carousel-3" class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"><i class="fas fa-angle-left mt-3"></i></label>
-      <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
-  
-      <!--Slide 2-->
-      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item absolute opacity-0 bg-center" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner2.png?raw=true')"></div>
-      <label for="carousel-1" class="control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i class="fas fa-angle-left mt-3"></i></label>
-      <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
-  
-      <!--Slide 3-->
-      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-      <div class="carousel-item absolute opacity-0" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner3.png?raw=true')"></div>
-      <label for="carousel-2" class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i class="fas fa-angle-left mt-3"></i></label>
-      <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
-  
-      <!-- Add additional indicators for each slide-->
-      <ol class="carousel-indicators">
-        <li class="inline-block mr-3">
-          <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-        </li>
-        <li class="inline-block mr-3">
-          <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
-        </li>
-      </ol>
+        <!-- Slide 1 -->
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+        <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner1.png?raw=true')"></div>
+        <label for="carousel-3" class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center items-center"><i class="fas fa-angle-left"></i></label>
+        <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto flex justify-center items-center"><i class="fas fa-angle-right"></i></label>
+
+        <!-- Slide 2 -->
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0 bg-center" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner2.png?raw=true')"></div>
+        <label for="carousel-1" class="control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center items-center"><i class="fas fa-angle-left"></i></label>
+        <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto flex justify-center items-center"><i class="fas fa-angle-right"></i></label>
+
+        <!-- Slide 3 -->
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+        <div class="carousel-item absolute opacity-0" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner3.png?raw=true')"></div>
+        <label for="carousel-2" class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center items-center"><i class="fas fa-angle-left"></i></label>
+        <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer font-bold text-white rounded-full bg-gray-700 hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto flex justify-center items-center"><i class="fas fa-angle-right"></i></label>
+
+        <!-- Add additional indicators for each slide -->
+        <ol class="carousel-indicators flex justify-center mt-4 space-x-3">
+            <li>
+                <label for="carousel-1" class="carousel-bullet w-3 h-3 cursor-pointer block rounded-full bg-gray-700 hover:bg-blue-700"></label>
+            </li>
+            <li>
+                <label for="carousel-2" class="carousel-bullet w-3 h-3 cursor-pointer block rounded-full bg-gray-700 hover:bg-blue-700"></label>
+            </li>
+            <li>
+                <label for="carousel-3" class="carousel-bullet w-3 h-3 cursor-pointer block rounded-full bg-gray-700 hover:bg-blue-700"></label>
+                
+            </li>
+        </ol>
     </div>
-  </div>
-  
-  <script>
-    // JavaScript to auto-scroll the carousel every 3 seconds
-    let currentSlide = 1;
-    const totalSlides = 3;
-    setInterval(() => {
-      currentSlide = (currentSlide % totalSlides) + 1;  // Cycle through slides
-      document.getElementById(`carousel-${currentSlide}`).checked = true;  // Change to next slide
-    }, 300); // 3000ms = 3 seconds
-  </script>
+</div>
+
+    
+    <!-- Auto-Rotate Script -->
+    <script>
+        // Auto-rotate the carousel every 5 seconds
+        let currentSlide = 1;
+        const totalSlides = 3; // Number of slides
+        const changeSlide = () => {
+            // Update the radio button for the current slide
+            document.getElementById(`carousel-${currentSlide}`).checked = true;
+            // Move to the next slide, loop back to the first if at the end
+            currentSlide = currentSlide < totalSlides ? currentSlide + 1 : 1;
+        };
+        // Set interval for auto-rotation
+        setInterval(changeSlide, 4000);
+    </script>
+    
 
     <div class="bg-gradient-to-r from-blue-700 to-[#B06AB3] font-sans  px-6 py-12">
         <div class="container mx-auto flex flex-col justify-center items-center text-center">
@@ -394,6 +454,7 @@
               color: #2b6cb0;
             }
           </style>
+          
 
     </main>
 
