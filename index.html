@@ -5,41 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevBuilds Solutions</title>
     <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="script.js"></script>
     <style>
         body {
-            min-height: 1000vh; /* Ensure the body is at least twice the viewport height */
+            min-height: 100vh;
         }
     </style>
-</head><center>
-<body>
-    <header class="header">
-        <span >Welcome To DevBuilds</span> 
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-blue-500 shadow-md p-4 flex justify-between items-center">
+        <span>Welcome To DevBuilds</span>
         <nav>
-            <ul>
+            <ul class="flex space-x-6">
                 <li><a href="#Newsletter">Newsletter</a></li>
                 <li><a href="#Contact Us">+91 9309154732</a></li>
                 <li><a href="#FAQ">FAQ's</a></li>
                 <li><a href="#Contact Us">Contact Us</a></li>
-                <li><a href="#Contact Us">            </a></li
-              
             </ul>
         </nav>
-        
     </header>
-    <header class="header1">
-        <div class="logo" style="height: 20px; display: flex; align-items: center; margin-right: auto;">
-            <img src="/images/devlogo.png" alt="DevBuilds Logo" style="height: 100%; margin-right: 8px;">
+
+    <header class="bg-blue-100 mx-auto p-4 flex flex-col md:flex-row justify-between  md:space-x-2">
+        <!-- Logo and Title Section -->
+        <div class="flex items-center mb-6 md:mb-0">
+            <img src="/images/devlogo.png" alt="DevBuilds Logo" class="h-16 mr-4">
             <div>
-            <span class="devbuild">DevBuilds Solutions</span>
-        <div class="solutions-unlimited">Solutions Unlimited</div>
-    </div>
+                <span class="text-2xl font-bold text-black">DevBuilds Solutions</span>
+                <div class="text-sm text-gray-700">Solutions Unlimited</div>
+            </div>
         </div>
-        
-        <div class="search-bar" style="margin: 0 auto; display: flex;">
-            <input type="text" placeholder="Search for products" />
-            <select id="category-select">
+    
+        <!-- Search Bar Section -->
+        <div class="search-bar mx-auto flex flex-col md:flex-row md:items-start items-start md:space-y-0 md:space-x-4 p-3 bg-white shadow-md rounded-lg">
+ <!-- Search Input -->
+            <input 
+                type="text" 
+                placeholder="Search for products" 
+                class="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300 hover:ring-2 hover:ring-blue-500 transition-all"
+            />
+            <!-- Category Select -->
+            <select 
+                id="category-select" 
+                class="w-full md:w-auto h-10 px-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300"
+            >
                 <option value="">SELECT CATEGORY</option>
                 <option value="java">Artificial Intelligence</option>
                 <option value="android">Android</option>
@@ -50,272 +62,351 @@
                 <option value="python">BioTech</option>
                 <option value="IOT">IOT</option>
             </select>
-            <button type="submit">Search</button>
-        </div>
-        
-        <nav >
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#shop">SHOP</a></li>
-                <li><a href="#journal-paper">JOURNAL PAPER</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <header class="header2">
-        <div class="logo" style="height: 20px; display: flex; align-items: center;">
-            <img src="/images/devlogo.png" alt="DevBuilds Logo" style="height: 100%; margin-right: 8px;">
-            <span>DevBuilds Solutions</span>
-        </div>
-        
-        <!-- Browse Categories Dropdown -->
-        <div class="category-select">
-           
-            <select id="category-select">
-                <option value="">Browse Categories</option>
-                <option value="java">Java</option>
-                <option value="android">Android</option>
-                <option value="iot">IoT</option>
-                <option value="python">Python</option>
-            </select>
-        </div>
-        
-        <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#shop">SHOP</a></li>
-                <li><a href="#journal-paper">JOURNAL PAPER</a></li>
-                <li><a href="#blog">BLOG</a></li>
-                <li><a href="#about">ABOUT US</a></li>
-                <li><a href="#contact">CONTACT US</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-</center>
-    <main>
-        <div class="slideshow-container">
+            <!-- Search Button -->
+            <button 
+                type="submit" 
+                class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 transition-all"
+            >
+                Search
+            </button>
 
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="/Images/banner3.png" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="/Images/banner2.png" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            
-            <div class="mySlides fade">
-              <div class="numbertext"></div>
-              <img src="/Images/banner1.png" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-            </div>
-    
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
-              </div>
-              
-            
-            
-          <br>
-          
-         
-          <script src="script.js"></script>
-          <span>
-         <center><div class="container">
-              <div class="title">
-                  TOP VISITED CATEGORIES
-                </div>
-                <div class="categories">
-                    <div class="category" style="flex: 1 1 60%;">
-                        <div class="products">
-                            95 Products
-                        </div>
-                        
-                        <div class="name">
-                            PYTHON
-                        </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/python.png" alt="Smiley" width="auto" height="auto">
-                    </div>
-                    <div class="category" style="flex: 1 1 35%;">
-                        <div class="products">
-                            39 Products
-                        </div>
-                        <div class="name">
-                            EMBEDDED
-                        </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/IOT.png" alt="Smiley" width="auto" height="auto">
-                    </div>
-                    <div class="category" style="flex: 1 1 35%;">
-                        <div class="products">
-                            5 Products
-                        </div>
-                        <div class="name">
-                            ANDROID
-                        </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/Android.png" alt="Smiley" width="auto" height="auto">
-                    </div>
-                    <div class="category" style="flex: 1 1 35%;">
-                        <div class="products">
-                            32 Products
-                        </div>
-                        <div class="name">
-                            JAVA
-                        </div>
-                        <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="/Images/Java.png" alt="Smiley" width="auto" height="auto">
-                    </div>
-                </div>
-            </center> 
-            
-            </div>
-        </section>
-        <center> <section id="featured-products">
-            <h2>Featured Products</h2>
-            <p>Visit our shop to see amazing creations from our Projects.</p>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="path/to/image1.png" alt="Product Image" />
-                    <h3>A Deep Learning-Based Efficient Firearms Monitoring Technique for Building Secure Smart Cities</h3>
-                    <p>Python, Deep Learning, Projects, Deep Learning</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                    <p>Price: ₹5,500.00</p>
-                </div>
-                <div class="product-card">
-                    <img src="path/to/image2.png" alt="Product Image" />
-                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
-                    <p>Python, Deep Learning, Projects, Deep Learning</p>
-                    <p>Price: ₹5,500.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="path/to/image2.png" alt="Product Image" />
-                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
-                    <p>Python, Deep Learning, Projects, Deep Learning</p>
-                    <p>Price: ₹5,500.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="path/to/image2.png" alt="Product Image" />
-                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
-                    <p>Python, Deep Learning, Projects, Deep Learning</p>
-                    <p>Price: ₹5,500.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <div class="product-card">
-                    <img src="path/to/image2.png" alt="Product Image" />
-                    <h3>A Deep-Learning-Based Lightweight Model for Ship Localizations in SAR Images</h3>
-                    <p>Python, Deep Learning, Projects, Deep Learning</p>
-                    <p>Price: ₹5,500.00</p>
-                    <button class="add-to-cart">Add to Cart</button>
-                </div>
-                <!-- Add more product cards as needed -->
-            </div>
-        </section>
-            
-    </center>
-    <center><section id="about">
-        <h2>About Us</h2>
-        <p>Information about the company.</p>
-    </section></center>
-        <center><section id="services">
-            <h2>Our Services</h2>
-            <p>Details about the services offered.</p>
-        </section></center>
-        <center><section id="contact">
-            <h2>Contact Us</h2>
-            <p>Contact information and form.</p>
-        </section></center>
-    </main>
-</body>
-<footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="/Images/devlogo.png" alt="DevBuilds">
-        <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
-        <p>Phone: (+91) 90254 34960</p>
-        <p>Email: sales@finalyearprojects.in</p>
-      </div>
-      <div class="footer-card">
-        <h4>OUR CATEGORY</h4>
-        <ul>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Embedded</li>
-          <li>Matlab</li>
-          <li>VLSI</li>
-          <li>Mechanical</li>
-        </ul>
-      </div>
-      <div class="footer-card">
-        <h4>USEFUL LINKS</h4>
-        <ul>
-          <li>Privacy Policy</li>
-          <li>Returns</li>
-          <li>Terms & Conditions</li>
-          <li>Contact Us</li>
-          <li>Latest News</li>
-          <li>FAQ</li>
-        </ul>
-      </div>
-      <div class="footer-card">
-        <h4>MINI PROJECTS</h4>
-        <ul>
-          <li>Java</li>
-          <li>Python</li>
-          <li>Embedded</li>
-          <li>Matlab</li>
-          <li>VLSI</li>
-        </ul>
-      </div>
-    </div>
-    <p>&copy; Devbuilds.in 2024</p>
-  </footer>
-  
-<!-- <footer>
-    <div class="footer-content">
-        <div class="footer-logo">
-            <img src="/Images/devlogo.png" alt="DevBuilds">
-            <p>Global Techno Solutions - GTS, started by young engineering graduates to overcome a problem they faced during their academic years. That is "Providing Solutions". They kept it as the motto for their company.</p>
-            <p>Phone: (+91) 90254 34960</p>
-            <p>Email: sales@finalyearprojects.in</p>
-        </div>
-        <div class="footer-links">
-            <h4>OUR CATEGORY</h4>
-            <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Embedded</li>
-                <li>Matlab</li>
-                <li>VLSI</li>
-                <li>Mechanical</li>
-            </ul>
-        </div>
-        <div class="footer-links">
-            <h4>USEFUL LINKS</h4>
-            <ul>
-                <li>Privacy Policy</li>
-                <li>Returns</li>
-                <li>Terms & Conditions</li>
-                <li>Contact Us</li>
-                    <li>Latest News</li>
-                    <li>FAQ</li>
+            <nav class="contents">
+                <ul class="ml-4 xl:w-48 flex items-center justify-end">
+                  <li class="ml-2 lg:ml-4 relative inline-block">
+                    <a class="" href="">
+                      <svg class="h-9 lg:h-10 p-2 text-gray-500" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-9x"><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="ml-2 lg:ml-4 relative inline-block">
+                    <a class="" href="">
+                      <div class="absolute -top-1 right-0 z-10 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">3</div>
+                      <svg class="h-9 lg:h-10 p-2 text-gray-500" aria-hidden="true" focusable="false" data-prefix="far" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path></svg>
+                    </a>
+                  </li>
+                  <li class="ml-2 lg:ml-4 relative inline-block">
+                    <a class="" href="">
+                      <div class="absolute -top-1 right-0 z-10 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">12</div>
+                      <svg class="h-9 lg:h-10 p-2 text-gray-500" aria-hidden="true" focusable="false" data-prefix="far" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-9x"><path fill="currentColor" d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"></path></svg>
+                    </a>
+                  </li>
                 </ul>
+              </nav>
+          
+              <!-- cart count -->
+              <div class="ml-4 hidden sm:flex flex-col font-bold">
+                <span class="text-xs text-gray-400">Your Cart</span>
+                <span>$2,650,59</span>
+              </div>
             </div>
-            <div class="footer-links">
-                <h4>MINI PROJECTS</h4>
+            
+        </div>
+    
+        <!-- Mobile Menu Icon -->
+        <span class="material-symbols-outlined text-2xl cursor-pointer mt-4 md:mt-0">menu</span>
+    </header>
+   
+   
+<div class="carousel relative rounded relative overflow-hidden shadow-xl ">
+    <div class="carousel-inner relative overflow-hidden w-full">
+      <!--Slide 1-->
+      <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+      <div class="carousel-item absolute opacity-0 bg-center" style="height:500px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner1.png?raw=true')"></div>
+  
+      <label for="carousel-3" class="control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto flex justify-center content-center"><i class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
+  
+      <!--Slide 2-->
+      <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0 bg-center" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner2.png?raw=true')"></div>
+      <label for="carousel-1" class="control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
+  
+      <!--Slide 3-->
+      <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+      <div class="carousel-item absolute opacity-0" style="height:700px; background-image: url('https://github.com/Varp17/devbuild/blob/main/Images/banner3.png?raw=true')"></div>
+      <label for="carousel-2" class="control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto"><i class="fas fa-angle-left mt-3"></i></label>
+      <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto"><i class="fas fa-angle-right mt-3"></i></label>
+  
+      <!-- Add additional indicators for each slide-->
+      <ol class="carousel-indicators">
+        <li class="inline-block mr-3">
+          <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+        <li class="inline-block mr-3">
+          <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+        </li>
+      </ol>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript to auto-scroll the carousel every 3 seconds
+    let currentSlide = 1;
+    const totalSlides = 3;
+    setInterval(() => {
+      currentSlide = (currentSlide % totalSlides) + 1;  // Cycle through slides
+      document.getElementById(`carousel-${currentSlide}`).checked = true;  // Change to next slide
+    }, 300); // 3000ms = 3 seconds
+  </script>
+
+    <div class="bg-gradient-to-r from-blue-700 to-[#B06AB3] font-sans  px-6 py-12">
+        <div class="container mx-auto flex flex-col justify-center items-center text-center">
+          <h2 class="text-white sm:text-4xl text-3xl font-bold mb-4">Discover Our New Collection</h2>
+          <p class="text-white text-base text-center mb-8">Elevate your style with our latest arrivals. Shop now and enjoy exclusive discounts!</p>
+  
+          <button type="button" class="bg-white text-sm text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-slate-100">
+            Get Started
+          </button>
+        </div>
+      </div>
+    
+
+    <main class="mt-10">
+        <section class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Top Visited Categories</h2>
+            <div class="flex flex-wrap justify-center gap-6">
+                <div class="category w-60 p-4 bg-white shadow-lg rounded-lg text-center">
+                    <div class="products">95 Products</div>
+                    <div class="name font-semibold text-lg">PYTHON</div>
+                    <img src="/Images/python.png" alt="Python" class="w-full h-40 object-cover rounded-lg mt-2">
+                </div>
+                <div class="category w-60 p-4 bg-white shadow-lg rounded-lg text-center">
+                    <div class="products">39 Products</div>
+                    <div class="name font-semibold text-lg">EMBEDDED</div>
+                    <img src="/Images/IOT.png" alt="Embedded" class="w-full h-40 object-cover rounded-lg mt-2">
+                </div>
+                <div class="category w-60 p-4 bg-white shadow-lg rounded-lg text-center">
+                    <div class="products">5 Products</div>
+                    <div class="name font-semibold text-lg">ANDROID</div>
+                    <img src="/Images/Android.png" alt="Android" class="w-full h-40 object-cover rounded-lg mt-2">
+                </div>
+                <div class="category w-60 p-4 bg-white shadow-lg rounded-lg text-center">
+                    <div class="products">32 Products</div>
+                    <div class="name font-semibold text-lg">JAVA</div>
+                    <img src="/Images/Java.png" alt="Java" class="w-full h-40 object-cover rounded-lg mt-2">
+                </div>
+            </div>
+        </section>
+
+        <section id="featured-products" class="mt-10 text-center w-full">
+            <h2 class="text-3xl font-bold mb-6">Featured Products</h2>
+            <p>Visit our shop to see amazing creations from our Projects.</p>
+            <div class="product-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6 mx-auto px-8">
+              
+                <!-- Additional Product Cards can follow the same structure -->
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+
+                <div class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                    <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+                        <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110" 
+                            src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200" alt="investment-seed-round" />
+                    </div>
+                    <div class="p-4">
+                        <h6 class="mb-2 text-slate-800 text-xl font-semibold">
+                            Successful Seed Round
+                        </h6>
+                        <p class="text-slate-600 leading-normal font-light">
+                            We are thrilled to announce the completion of our seed round, securing $2M in investment to fuel product development and market expansion.
+                        </p>
+                    </div>
+                    <div class="px-4 pb-4 pt-0 mt-2">
+                        <button class="rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none opacity-0 group-hover:opacity-100 transform group-hover:translate-y-[-8px]" type="button">
+                            Add to Cart
+                        </button>
+                    </div>
+                </div>
+                
+                
+                
+            </div>
+        </section>
+        
+        <style>
+            .carousel-open:checked + .carousel-item {
+              position: static;
+              opacity: 100;
+            }
+          
+            .carousel-item {
+              -webkit-transition: opacity 0.6s ease-out;
+              transition: opacity 0.6s ease-out;
+            }
+          
+            #carousel-1:checked ~ .control-1,
+            #carousel-2:checked ~ .control-2,
+            #carousel-3:checked ~ .control-3 {
+              display: block;
+            }
+          
+            .carousel-indicators {
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              position: absolute;
+              bottom: 2%;
+              left: 0;
+              right: 0;
+              text-align: center;
+              z-index: 10;
+            }
+          
+            #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+            #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+            #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+              color: #2b6cb0;
+            }
+          </style>
+
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 mt-10">
+        <div class="footer-content container mx-auto flex justify-between">
+            <div class="footer-logo w-1/3">
+                <img src="/Images/devlogo.png" alt="DevBuilds" class="h-16">
+                <p class="mt-4">DevBuild Solutions - GTS, started by young engineering graduates...</p>
+                <p>Phone: (+91) 9309154732</p>
+                <p>Email: sales@finalyearprojects.in</p>
+            </div>
+            <div class="footer-card w-1/4">
+                <h4 class="font-semibold text-lg">OUR CATEGORY</h4>
                 <ul>
                     <li>Java</li>
                     <li>Python</li>
@@ -324,9 +415,18 @@
                     <li>VLSI</li>
                 </ul>
             </div>
+            <div class="footer-card w-1/4">
+                <h4 class="font-semibold text-lg">USEFUL LINKS</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Returns</li>
+                    <li>Terms & Conditions</li>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
         </div>
-        <p>&copy; Devbuilds.in 2024</p>
-    </footer>  -->
-   
-
+        <p class="text-center mt-6">&copy; Devbuilds.in 2025</p>
+    </footer>
+</body>
 </html>
