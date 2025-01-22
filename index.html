@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="src/output.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script src="script.js"></script>
     <style>
@@ -22,86 +23,103 @@
 
     <!-- <div class="container mx-auto px-4 py-8"> -->
 
-        <!-- Header with Navigation -->
-        <header class="bg-blue-500 shadow-md flex justify-between items-center py-4 px-6">
-            <!-- Welcome Text (Visible only on medium screens and larger) -->
-            <span class="text-white text-xl font-semibold hidden lg:block">Welcome To DevBuilds</span>
-            
-            <!-- Additional Div Between Span and Nav -->
-            <!-- Social Media Icons Section (Visible only on mobile screens) -->
-            <div class=" flex justify-center items-right  ">
-                <div class="flex flex-row justify-center space-x-4">
-                    <!-- Facebook -->
-                    <a rel="noopener noreferrer nofollow" href="https://www.facebook.com/sharer/sharer.php?u=https://www.finalyearprojects.in/" target="_blank" class="wd-social-icon" aria-label="Facebook social link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
-                            <path d="M22.675 0H1.325C.594 0 0 .593 0 1.326v21.348C0 23.406.594 24 1.325 24h11.499v-9.294H9.691v-3.622h3.133V8.41c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.796.143v3.24h-1.917c-1.506 0-1.798.717-1.798 1.768v2.317h3.595l-.468 3.622h-3.127V24h6.127C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z" />
-                        </svg>
-                    </a>
-                    
-                    <!-- Twitter -->
-                    <a rel="noopener noreferrer nofollow" href="https://x.com/share?url=https://www.finalyearprojects.in/" target="_blank" class="wd-social-icon" aria-label="Twitter social link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
-                            <path d="M23.953 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.565-2.005.978-3.127 1.195-.897-.959-2.178-1.558-3.594-1.558-2.719 0-4.924 2.205-4.924 4.917 0 .38.045.752.126 1.109-4.091-.205-7.719-2.165-10.148-5.144-.424.722-.666 1.561-.666 2.465 0 1.701.87 3.197 2.188 4.077-.807-.026-1.566-.248-2.228-.616v.061c0 2.377 1.693 4.363 3.946 4.813-.412.112-.845.171-1.292.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.417-1.685 1.319-3.808 2.105-6.102 2.105-.397 0-.79-.023-1.177-.068 2.189 1.403 4.768 2.223 7.548 2.223 9.057 0 14.009-7.496 14.009-13.986 0-.21-.008-.423-.02-.635.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
-                        </svg>
-                    </a>
-            
-                    <!-- Pinterest -->
-                    <a rel="noopener noreferrer nofollow" href="https://pinterest.com/pin/create/button/?url=https://www.finalyearprojects.in/" target="_blank" class="wd-social-icon" aria-label="Pinterest social link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
-                            <path d="M12 0C5.372 0 0 5.373 0 12c0 4.548 2.462 8.533 6.121 10.564-.085-.893-.16-2.266.032-3.245.176-.924 1.135-5.864 1.135-5.864s-.289-.579-.289-1.434c0-1.343.778-2.346 1.746-2.346.823 0 1.221.617 1.221 1.358 0 .827-.528 2.062-.799 3.21-.228.969.481 1.758 1.428 1.758 1.714 0 3.032-1.81 3.032-4.41 0-2.303-1.656-3.915-4.025-3.915-2.744 0-4.361 2.055-4.361 4.174 0 .827.318 1.716.717 2.2.08.096.091.179.067.276-.074.302-.241.969-.273 1.103-.043.179-.143.217-.333.131-1.245-.578-2.021-2.387-2.021-3.851 0-3.127 2.273-5.997 6.555-5.997 3.44 0 6.112 2.449 6.112 5.712 0 3.407-2.147 6.15-5.129 6.15-1.002 0-1.944-.52-2.263-1.137l-.615 2.34c-.22.862-.815 1.945-1.218 2.606.915.282 1.883.437 2.892.437 6.628 0 12-5.373 12-12S18.628 0 12 0z" />
-                        </svg>
-                    </a>
-            
-                    <!-- LinkedIn -->
-                    <a rel="noopener noreferrer nofollow" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.finalyearprojects.in/" target="_blank" class="wd-social-icon" aria-label="Linkedin social link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.783 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.385c0-1.285-.026-2.942-1.793-2.942-1.793 0-2.067 1.4-2.067 2.85v5.477h-3v-10h2.887v1.367h.041c.402-.761 1.386-1.561 2.854-1.561 3.049 0 3.612 2.007 3.612 4.62v5.574z" />
-                        </svg>
-                    </a>
-            
-                    <!-- Telegram -->
-                    <a rel="noopener noreferrer nofollow" href="https://telegram.me/share/url?url=https://www.finalyearprojects.in/" target="_blank" class="wd-social-icon" aria-label="Telegram social link">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
-                            <path d="M24 4.556c0-.748-.653-1.27-1.352-.92l-21.294 9.616c-.759.343-.731.888.055 1.154l5.466 1.86 1.958 6.183c.236.743.62.926 1.129.758l3.347-2.242 4.48 3.321c.593.439 1.1.208 1.242-.537l3.778-18.835c.129-.646-.237-.951-.865-.637l-18.537 8.762" />
-                        </svg>
-                    </a>
-                </div>
-            
-                <!-- Navigation Menu (Visible only on medium screens and larger) -->
-                <nav class="hidden lg:block">
-                    <ul class="flex space-x-6">
-                        <li><a href="#Newsletter" class="text-white hover:text-blue-200 border-l pl-2">Newsletter</a></li>
-                        <li><a href="tel:+919309154732" class="text-white hover:text-blue-200 border-l pl-2">+91 9309154732</a></li>
-                        <li><a href="#FAQ" class="text-white hover:text-blue-200 border-l pl-2">FAQ's</a></li>
-                        <li><a href="#Contact" class="text-white hover:text-blue-200 border-l pl-2">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            
-        </header>
-        
-        
-        
-    
-        <!-- Main Header Section with Logo, Title, and Search -->
-        <header class="bg-blue-100 mx-auto p-4 flex flex-col md:flex-row justify-between md:space-x-4">
-          <!-- Logo and Title Section -->
-          <div class="flex items-center mb-6 md:mb-0  sm:width-0.1/8">
-            <img src="https://github.com/Varp17/devbuild/blob/main/Images/devlogo.png?raw=true" alt="DevBuilds Logo" class="h-16 mr-4">
-            <div>
-              <span class="text-2xl font-bold text-black">DevBuilds Solutions</span>
-              <div class="text-sm text-gray-700">Solutions Unlimited</div>
-            </div>
-          </div>
-          
+    <!-- Header with Navigation -->
+    <header class="bg-blue-500 shadow-md flex justify-between items-center py-4 px-6">
+        <!-- Welcome Text (Visible only on medium screens and larger) -->
+        <span class="text-white text-xl font-semibold hidden lg:block">Welcome To DevBuilds</span>
 
-    
-          <!-- Search Bar and Category Section -->
-          <div class="search-bar hidden sm:block md:flex flex-col md:flex-row items-start space-y-4 sm:space-y-4 md:space-y-0  md:space-x-4 p-3 bg-white shadow-md rounded-lg">
+        <!-- Additional Div Between Span and Nav -->
+        <!-- Social Media Icons Section (Visible only on mobile screens) -->
+        <div class=" flex justify-center items-right  ">
+            <div class="flex flex-row justify-center space-x-4">
+                <!-- Facebook -->
+                <a rel="noopener noreferrer nofollow"
+                    href="https://www.facebook.com/sharer/sharer.php?u=https://www.finalyearprojects.in/"
+                    target="_blank" class="wd-social-icon" aria-label="Facebook social link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
+                        <path
+                            d="M22.675 0H1.325C.594 0 0 .593 0 1.326v21.348C0 23.406.594 24 1.325 24h11.499v-9.294H9.691v-3.622h3.133V8.41c0-3.1 1.894-4.788 4.659-4.788 1.325 0 2.463.099 2.796.143v3.24h-1.917c-1.506 0-1.798.717-1.798 1.768v2.317h3.595l-.468 3.622h-3.127V24h6.127C23.406 24 24 23.406 24 22.674V1.326C24 .593 23.406 0 22.675 0z" />
+                    </svg>
+                </a>
+
+                <!-- Twitter -->
+                <a rel="noopener noreferrer nofollow" href="https://x.com/share?url=https://www.finalyearprojects.in/"
+                    target="_blank" class="wd-social-icon" aria-label="Twitter social link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
+                        <path
+                            d="M23.953 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.565-2.005.978-3.127 1.195-.897-.959-2.178-1.558-3.594-1.558-2.719 0-4.924 2.205-4.924 4.917 0 .38.045.752.126 1.109-4.091-.205-7.719-2.165-10.148-5.144-.424.722-.666 1.561-.666 2.465 0 1.701.87 3.197 2.188 4.077-.807-.026-1.566-.248-2.228-.616v.061c0 2.377 1.693 4.363 3.946 4.813-.412.112-.845.171-1.292.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.6 3.417-1.685 1.319-3.808 2.105-6.102 2.105-.397 0-.79-.023-1.177-.068 2.189 1.403 4.768 2.223 7.548 2.223 9.057 0 14.009-7.496 14.009-13.986 0-.21-.008-.423-.02-.635.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+                    </svg>
+                </a>
+
+                <!-- Pinterest -->
+                <a rel="noopener noreferrer nofollow"
+                    href="https://pinterest.com/pin/create/button/?url=https://www.finalyearprojects.in/"
+                    target="_blank" class="wd-social-icon" aria-label="Pinterest social link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
+                        <path
+                            d="M12 0C5.372 0 0 5.373 0 12c0 4.548 2.462 8.533 6.121 10.564-.085-.893-.16-2.266.032-3.245.176-.924 1.135-5.864 1.135-5.864s-.289-.579-.289-1.434c0-1.343.778-2.346 1.746-2.346.823 0 1.221.617 1.221 1.358 0 .827-.528 2.062-.799 3.21-.228.969.481 1.758 1.428 1.758 1.714 0 3.032-1.81 3.032-4.41 0-2.303-1.656-3.915-4.025-3.915-2.744 0-4.361 2.055-4.361 4.174 0 .827.318 1.716.717 2.2.08.096.091.179.067.276-.074.302-.241.969-.273 1.103-.043.179-.143.217-.333.131-1.245-.578-2.021-2.387-2.021-3.851 0-3.127 2.273-5.997 6.555-5.997 3.44 0 6.112 2.449 6.112 5.712 0 3.407-2.147 6.15-5.129 6.15-1.002 0-1.944-.52-2.263-1.137l-.615 2.34c-.22.862-.815 1.945-1.218 2.606.915.282 1.883.437 2.892.437 6.628 0 12-5.373 12-12S18.628 0 12 0z" />
+                    </svg>
+                </a>
+
+                <!-- LinkedIn -->
+                <a rel="noopener noreferrer nofollow"
+                    href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.finalyearprojects.in/"
+                    target="_blank" class="wd-social-icon" aria-label="Linkedin social link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.783-1.75-1.75s.784-1.75 1.75-1.75c.966 0 1.75.783 1.75 1.75s-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.385c0-1.285-.026-2.942-1.793-2.942-1.793 0-2.067 1.4-2.067 2.85v5.477h-3v-10h2.887v1.367h.041c.402-.761 1.386-1.561 2.854-1.561 3.049 0 3.612 2.007 3.612 4.62v5.574z" />
+                    </svg>
+                </a>
+
+                <!-- Telegram -->
+                <a rel="noopener noreferrer nofollow"
+                    href="https://telegram.me/share/url?url=https://www.finalyearprojects.in/" target="_blank"
+                    class="wd-social-icon" aria-label="Telegram social link">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="white">
+                        <path
+                            d="M24 4.556c0-.748-.653-1.27-1.352-.92l-21.294 9.616c-.759.343-.731.888.055 1.154l5.466 1.86 1.958 6.183c.236.743.62.926 1.129.758l3.347-2.242 4.48 3.321c.593.439 1.1.208 1.242-.537l3.778-18.835c.129-.646-.237-.951-.865-.637l-18.537 8.762" />
+                    </svg>
+                </a>
+            </div>
+
+            <!-- Navigation Menu (Visible only on medium screens and larger) -->
+            <nav class="hidden lg:block">
+                <ul class="flex space-x-6">
+                    <li><a href="#Newsletter" class="text-white hover:text-blue-200 border-l pl-2">Newsletter</a></li>
+                    <li><a href="tel:+919309154732" class="text-white hover:text-blue-200 border-l pl-2">+91
+                            9309154732</a></li>
+                    <li><a href="#FAQ" class="text-white hover:text-blue-200 border-l pl-2">FAQ's</a></li>
+                    <li><a href="#Contact" class="text-white hover:text-blue-200 border-l pl-2">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- Main Header Section with Logo, Title, and Search -->
+    <header class="bg-blue-100 mx-auto p-4 flex flex-col md:flex-row justify-between md:space-x-4">
+        <!-- Logo and Title Section -->
+        <div class="flex items-center mb-6 md:mb-0  sm:width-0.1/8">
+            <img src="https://github.com/Varp17/devbuild/blob/main/Images/devlogo.png?raw=true" alt="DevBuilds Logo"
+                class="h-16 mr-4">
+            <div>
+                <span class="text-2xl font-bold text-black">DevBuilds Solutions</span>
+                <div class="text-sm text-gray-700">Solutions Unlimited</div>
+            </div>
+        </div>
+
+
+
+        <!-- Search Bar and Category Section -->
+        <div
+            class="search-bar hidden sm:block md:flex flex-col md:flex-row items-start space-y-4 sm:space-y-4 md:space-y-0  md:space-x-4 p-3 bg-white shadow-md rounded-lg">
             <!-- Search Input -->
             <input type="text" placeholder="Search for products"
                 class="w-full sm:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300 hover:ring-2 hover:ring-blue-500 transition-all" />
-    
+
             <!-- Category Select -->
             <select id="category-select"
                 class="w-full sm:w-auto h-10 px-3 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring focus:ring-blue-300">
@@ -115,94 +133,106 @@
                 <option value="python">BioTech</option>
                 <option value="IOT">IOT</option>
             </select>
-    
+
             <!-- Search Button -->
             <button type="submit"
                 class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 transition-all">
                 Search
             </button>
-          </div>
+        </div>
 
-          <div class="justify-start whb-hidden-lg md:hidden">
+        <div class="justify-start whb-hidden-lg md:hidden">
             <span id="menuIcon" class="material-symbols-outlined text-2xl cursor-pointer font-normal">
                 menu
             </span>
 
             <nav class="flex space-x-4 mt-4">
                 <ul class="flex space-x-4 ml-auto"> <!-- Added ml-auto here to align to the right -->
-    
+
                     <li class="relative">
                         <a href="#" class="text-gray-500 hover:text-gray-700">
-                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path>
+                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 448 512">
+                                <path fill="currentColor"
+                                    d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z">
+                                </path>
                             </svg>
                         </a>
                     </li>
                     <li class="relative">
                         <a href="#" class="text-gray-500 hover:text-gray-700">
-                            <div class="absolute -top-1 right-0 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">3</div>
-                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentColor" d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z"></path>
+                            <div class="absolute -top-1 right-0 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">3
+                            </div>
+                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 512 512">
+                                <path fill="currentColor"
+                                    d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469 285.6c53.5-54.7 64.7-157.9-10.6-221.3zm-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5 10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8z">
+                                </path>
                             </svg>
                         </a>
                     </li>
                     <li class="relative">
                         <a href="#" class="text-gray-500 hover:text-gray-700">
-                            <div class="absolute -top-1 right-0 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">12</div>
-                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                <path fill="currentColor" d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z"></path>
+                            <div class="absolute -top-1 right-0 bg-blue-300 text-xs font-bold px-1 py-0.5 rounded-sm">12
+                            </div>
+                            <svg class="h-8 p-2" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 576 512">
+                                <path fill="currentColor"
+                                    d="M551.991 64H144.28l-8.726-44.608C133.35 8.128 123.478 0 112 0H12C5.373 0 0 5.373 0 12v24c0 6.627 5.373 12 12 12h80.24l69.594 355.701C150.796 415.201 144 430.802 144 448c0 35.346 28.654 64 64 64s64-28.654 64-64a63.681 63.681 0 0 0-8.583-32h145.167a63.681 63.681 0 0 0-8.583 32c0 35.346 28.654 64 64 64 35.346 0 64-28.654 64-64 0-18.136-7.556-34.496-19.676-46.142l1.035-4.757c3.254-14.96-8.142-29.101-23.452-29.101H203.76l-9.39-48h312.405c11.29 0 21.054-7.869 23.452-18.902l45.216-208C578.695 78.139 567.299 64 551.991 64zM208 472c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm256 0c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm23.438-200H184.98l-31.31-160h368.548l-34.78 160z">
+                                </path>
                             </svg>
                         </a>
                     </li>
                 </ul>
             </nav>
-        </div> 
-
-         
-        
+        </div>
 
 
-            <!-- Sidebar Script and sidebar  -->
-          <div id="sidebar" class="fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
+
+
+
+        <!-- Sidebar Script and sidebar  -->
+        <div id="sidebar"
+            class="fixed top-0 left-0 h-full w-64 bg-gray-800 text-white transform -translate-x-full transition-transform duration-300 ease-in-out z-50">
             <div class="p-4">
-              <h2 class="text-xl font-bold">My Sidebar</h2>
-              <ul class="mt-4">
-                <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Dashboard</li>
-                <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Profile</li>
-                <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Settings</li>
-                <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Logout</li>
-              </ul>
+                <h2 class="text-xl font-bold">My Sidebar</h2>
+                <ul class="mt-4">
+                    <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Dashboard</li>
+                    <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Profile</li>
+                    <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Settings</li>
+                    <li class="py-2 px-4 hover:bg-gray-700 cursor-pointer">Logout</li>
+                </ul>
             </div>
-          </div>
-          <script>
+        </div>
+        <script>
             const menuIcon = document.getElementById('menuIcon');
             const sidebar = document.getElementById('sidebar');
             const body = document.body;
-        
+
             // Toggle sidebar visibility
             menuIcon.addEventListener('click', (e) => {
-              e.stopPropagation(); // Prevent click from bubbling to body
-              sidebar.classList.toggle('-translate-x-full');
+                e.stopPropagation(); // Prevent click from bubbling to body
+                sidebar.classList.toggle('-translate-x-full');
             });
-        
+
             // Close sidebar when clicking outside of it
             body.addEventListener('click', () => {
-              if (!sidebar.classList.contains('-translate-x-full')) {
-                sidebar.classList.add('-translate-x-full');
-              }
+                if (!sidebar.classList.contains('-translate-x-full')) {
+                    sidebar.classList.add('-translate-x-full');
+                }
             });
-        
+
             // Prevent sidebar from closing when clicking inside it
             sidebar.addEventListener('click', (e) => {
-              e.stopPropagation(); // Stop click from propagating to the body
+                e.stopPropagation(); // Stop click from propagating to the body
             });
-          </script>
-        </header>
-    
-        <!-- User, Cart, and Heart Icon Section -->
-    
-    
-    
+        </script>
+    </header>
+
+    <!-- User, Cart, and Heart Icon Section -->
+
+
+
 
     <div class="carousel relative rounded relative overflow-hidden shadow-xl mt-11 ">
         <div class="carousel-inner relative overflow-hidden w-full">
@@ -275,7 +305,7 @@
 
 
     <main class="mt-10">
-        <section class="container mx-auto text-center">
+        <section class="container mx-auto text-center lg:px-4 ">
             <!-- Title -->
             <h2 class="text-3xl font-bold mb-6">Top Visited Categories</h2>
 
@@ -347,27 +377,46 @@
 
                 <!-- Android: Square -->
                 <div
-                    class="category android col-span-1 md:col-span-1 sm:col-span-1 p-6 bg-white shadow-lg rounded-lg text-center hover:shadow-xl transition-shadow duration-300">
-                    <div class="products text-green-500 font-medium mb-2">5 Products</div>
-                    <div class="name font-semibold text-xl mb-4">ANDROID</div>
-                    <img loading="lazy" decoding="async" width="auto" height="auto"
-                        src="https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1.jpg"
-                        class="attachment-full size-full" alt="android-projects-for-final-year-students"
-                        srcset="https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1.jpg 586w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-300x300.jpg 300w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-150x150.jpg 150w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-430x430.jpg 430w"
-                        sizes="(max-width: 586px) 100vw, 586px">
+                        class="category android col-span-1 md:col-span-1 sm:col-span-1 p-6 bg-white shadow-lg rounded-lg text-center hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                        <div class="products text-green-500 font-medium mb-2">5 Products</div>
+                        <div class="name font-semibold text-xl mb-4">ANDROID</div>
+                        <img 
+                            loading="lazy" 
+                            decoding="async" 
+                            class="attachment-full size-full object-contain w-full h-auto"
+                            src="https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1.jpg"
+                            alt="android-projects-for-final-year-students"
+                            srcset="
+                                https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1.jpg 586w,
+                                https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-300x300.jpg 300w,
+                                https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-150x150.jpg 150w,
+                                https://www.finalyearprojects.in/wp-content/uploads/2024/07/android-1-430x430.jpg 430w
+                            "
+                            sizes="(max-width: 586px) 100vw, 586px">
                 </div>
+
 
                 <!-- Java: Square -->
                 <div
-                    class="category java col-span-1 md:col-span-1 sm:col-span-1 p-6 bg-white shadow-lg rounded-lg text-center hover:shadow-xl transition-shadow duration-300">
-                    <div class="products text-green-500 font-medium mb-2">32 Products</div>
-                    <div class="name font-semibold text-xl mb-4">JAVA</div>
-                    <img loading="lazy" decoding="async" width="auto" height="auto"
-                        src="https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview.png"
-                        class="attachment-full size-full" alt=""
-                        srcset="https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview.png 500w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-300x300.png 300w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-150x150.png 150w, https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-430x430.png 430w"
-                        sizes="(max-width: 500px) 100vw, 586px">
-                </div>
+                class="category java col-span-1 md:col-span-1 sm:col-span-1 p-6 bg-white shadow-lg rounded-lg text-center hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                <div class="products text-green-500 font-medium mb-2">32 Products</div>
+                <div class="name font-semibold text-xl mb-4">JAVA</div>
+                <img 
+                    loading="lazy" 
+                    decoding="async" 
+                    class="attachment-full size-full object-contain w-full h-auto" 
+                    src="https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview.png" 
+                    alt="JAVA projects"
+                    srcset="
+                        https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview.png 500w, 
+                        https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-300x300.png 300w, 
+                        https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-150x150.png 150w, 
+                        https://www.finalyearprojects.in/wp-content/uploads/2024/07/java-removebg-preview-430x430.png 430w
+                    " 
+                    sizes="(max-width: 500px) 100vw, 586px">
+            </div>
+            
+
             </div>
         </section>
     </main>
@@ -407,7 +456,7 @@
             </div>
 
             <div
-                class="cursor-pointer group relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
+                class="cursor-pointer group relative flex flex-col my-5 bg-white shadow-sm border border-slate-200 rounded-lg w-80 hover:shadow-lg transition-shadow duration-300">
                 <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
                     <img class="transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] transform group-hover:scale-110"
                         src="https://images.unsplash.com/photo-1496436818536-e239445d3327?q=80&w=1200"
@@ -655,7 +704,7 @@
         </div>
         <p class="text-center mt-6">&copy; Devbuilds.in 2025</p>
     </footer>
-<!-- </div> -->
+    <!-- </div> -->
 </body>
 
 </html>
